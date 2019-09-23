@@ -18,7 +18,7 @@ Failover is the means by which a node is removed from the cluster and all its ow
 
 [#what_to_expect_in_application]
 // tag::what_to_expect_in_application[]
-== What to expect in an application during failure
+== What to expect in an application during failure.
 
 When a node fails (as opposed to _fails over_) the client library will be unable to contact the node.
 Operations may either time out (if the node has become unresponsive; for example if the OS kernel has crashed) or fail immediately with a network error (if the node is actively rejecting connections; for example if the Couchbase service was shut down).
